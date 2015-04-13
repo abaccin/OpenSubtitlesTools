@@ -1,0 +1,7 @@
+C:\Users\Andrea\Documents\Visual Studio 2013\Projects\VideoRenamer\OpenSubtitlesHandler\obj\Debug\OpenSubtitlesHandler.csprojResolveAssemblyReference.cache
+C:\Users\Andrea\Documents\Visual Studio 2013\Projects\VideoRenamer\OpenSubtitlesHandler\bin\Debug\OpenSubtitlesHandler.dll
+C:\Users\Andrea\Documents\Visual Studio 2013\Projects\VideoRenamer\OpenSubtitlesHandler\bin\Debug\OpenSubtitlesHandler.pdb
+C:\Users\Andrea\Documents\Visual Studio 2013\Projects\VideoRenamer\OpenSubtitlesHandler\bin\Debug\GetHash.dll
+C:\Users\Andrea\Documents\Visual Studio 2013\Projects\VideoRenamer\OpenSubtitlesHandler\bin\Debug\Ionic.Zlib.dll
+C:\Users\Andrea\Documents\Visual Studio 2013\Projects\VideoRenamer\OpenSubtitlesHandler\obj\Debug\OpenSubtitlesHandler.dll
+C:\Users\Andrea\Documents\Visual Studio 2013\Projects\VideoRenamer\OpenSubtitlesHandler\obj\Debug\OpenSubtitlesHandler.pdb

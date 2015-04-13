@@ -1,0 +1,46 @@
+﻿<Window x:Class="VideoRenamer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+
+
+    <Grid>
+
+        <Button x:Name="btnExecute" Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="133" Height="69" Click="Button_Click"/>
+        <ListBox x:Name="lstEvents" Margin="10,94,10,10" HorizontalContentAlignment="Stretch">
+            <ListBox.ItemTemplate>
+                <DataTemplate >
+                    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="out" >
+                        
+                        <Border CornerRadius="6" 
+                        BorderBrush="Gray"
+                        Background="LightGray"
+                        BorderThickness="2"
+                        Padding="8"
+                        >
+
+                            <Grid  x:Name="Grid">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="70" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="20"/>
+                                    <RowDefinition Height="20" />
+                                    <RowDefinition Height="20" />
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Column="0" Grid.Row="0" FontWeight="Bold" Text="File:" DockPanel.Dock="Left" Margin="5,0,10,0"/>
+                                <TextBlock Grid.Column="1" Grid.Row="0" Text="{Binding OldFileName}" Foreground="Green" FontWeight="Bold" />
+                                <TextBlock Grid.Column="0" Grid.Row="1" FontWeight="Bold" Text="File:" DockPanel.Dock="Left" Margin="5,0,10,0"/>
+                                <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding NewFileName}" Foreground="Green" FontWeight="Bold"  />
+                                <TextBlock Grid.Column="0" Grid.Row="2" FontWeight="Bold" Text="Message:" DockPanel.Dock="Left" Margin="5,0,10,0"/>
+                                <TextBlock Grid.Column="1" Grid.Row="2" Text="{Binding Message}" Foreground="Green" FontWeight="Bold"  />
+
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E86F22C-54F1-4587-92E4-7F4D949A81D3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenSubtitlesHandler</RootNamespace>
+    <AssemblyName>OpenSubtitlesHandler</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GetHash, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\GetHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zlib, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\Ionic.Zlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MovieHasher.cs" />
+    <Compile Include="OpenSubtitlesHandler\CheckMovieHash2Data.cs" />
+    <Compile Include="OpenSubtitlesHandler\CheckMovieHash2Result.cs" />
+    <Compile Include="OpenSubtitlesHandler\CheckMovieHashResult.cs" />
+    <Compile Include="OpenSubtitlesHandler\CheckSubHashResult.cs" />
+    <Compile Include="OpenSubtitlesHandler\DebugCode.cs" />
+    <Compile Include="OpenSubtitlesHandler\DebugEventArgs.cs" />
+    <Compile Include="OpenSubtitlesHandler\DebugLine.cs" />
+    <Compile Include="OpenSubtitlesHandler\DetectLanguageResult.cs" />
+    <Compile Include="OpenSubtitlesHandler\GetAvailableTranslationsResult.cs" />
+    <Compile Include="OpenSubtitlesHandler\GetCommentsResult.cs" />
+    <Compile Include="OpenSubtitlesHandler\IMethodResponse.cs" />
+    <Compile Include="OpenSubtitlesHandler\InsertMovieHashParameters.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseAddComment.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseAddRequest.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseAutoUpdate.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseCheckMovieHash.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseCheckMovieHash2.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseCheckSubHash.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseDescription.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseDetectLanguage.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseError.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseGetAvailableTranslations.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseGetComments.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseGetSubLanguages.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseGetTranslation.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseInsertMovie.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseInsertMovieHash.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseLogIn.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseMovieDetails.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseMovieSearch.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseNoOperation.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseReportWrongImdbMovie.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseReportWrongMovieHash.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseSearchToMail.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseServerInfo.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseSubtitleDownload.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseSubtitleSearch.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseSubtitlesVote.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseTryUploadSubtitles.cs" />
+    <Compile Include="OpenSubtitlesHandler\MethodResponseUploadSubtitles.cs" />
+    <Compile Include="OpenSubtitlesHandler\MovieSearchResult.cs" />
+    <Compile Include="OpenSubtitlesHandler\OpenSubtitles.cs" />
+    <Compile Include="OpenSubtitlesHandler\OSHConsole.cs" />
+    <Compile Include="OpenSubtitlesHandler\SearchToMailMovieParameter.cs" />
+    <Compile Include="OpenSubtitlesHandler\SubtitleDownloadResult.cs" />
+    <Compile Include="OpenSubtitlesHandler\SubtitleLanguage.cs" />
+    <Compile Include="OpenSubtitlesHandler\SubtitleSearchParameters.cs" />
+    <Compile Include="OpenSubtitlesHandler\SubtitleSearchResult.cs" />
+    <Compile Include="OpenSubtitlesHandler\TryUploadSubtitlesParameters.cs" />
+    <Compile Include="OpenSubtitlesHandler\UploadSubtitleInfoParameters.cs" />
+    <Compile Include="OpenSubtitlesHandler\UploadSubtitleParameters.cs" />
+    <Compile Include="OpenSubtitlesHandler\Utilities.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XmlRpcHandler\IXmlRpcValue.cs" />
+    <Compile Include="XmlRpcHandler\XmlRpcBasicValueType.cs" />
+    <Compile Include="XmlRpcHandler\XmlRpcGenerator.cs" />
+    <Compile Include="XmlRpcHandler\XmlRpcMethodCall.cs" />
+    <Compile Include="XmlRpcHandler\XmlRpcStructMember.cs" />
+    <Compile Include="XmlRpcHandler\XmlRpcValueArray.cs" />
+    <Compile Include="XmlRpcHandler\XmlRpcValueBasic.cs" />
+    <Compile Include="XmlRpcHandler\XmlRpcValueStruct.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="References\GetHash.dll" />
+    <Content Include="References\Ionic.Zlib.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
